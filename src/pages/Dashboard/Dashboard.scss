@@ -1,0 +1,391 @@
+@import "../../assets/scss/variables.scss";
+
+.dashboardMain {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  .left-panel {
+    display: flex;
+    width: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $BG_PURPLE;
+    padding: 20px 10px 20px 00px;
+
+    .iconcss {
+      font-size: $fontSize18;
+      padding: 25px 0px 10px 0px;
+      color: $WHITE_TXT;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .topArea {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .logoarea {
+        width: 60%;
+
+        .logo {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      span.inboxNo:before {
+        height: 17px;
+        width: 15px;
+        background: $BG_WHITE;
+        display: block;
+        position: absolute;
+        left: 10px;
+        margin-top: -35px;
+        border-radius: 20px;
+        content: '1';
+        color: $BLACK_TXT;
+        font-size: 14px;
+        padding-left: 4px;
+      }
+    }
+
+    .bottomArea {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .UsercssIcon {
+        font-size: $fontSize24;
+        padding: 25px 0px 10px 0px;
+        color: $WHITE_TXT;
+        cursor: pointer;
+        position: relative;
+
+        span.user:before {
+          height: 12px;
+          width: 12px;
+          background: $BG_LIGHTRED;
+          display: block;
+          position: absolute;
+          left: 15px;
+          content: '';
+          margin-top: -30px;
+          border-radius: 20px;
+        }
+      }
+
+    }
+
+
+  }
+
+  .right-panel {
+    display: flex;
+    width: 96%;
+    margin-left: -10px;
+    background-color: $BG_WHITE;
+    height: 100%;
+    border-top-left-radius: 10px;
+
+    .sideNav {
+      width: 15%;
+      height: 100%;
+      border-right: 1px solid $BG_GREY;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .topSec {
+        display: flex;
+        flex-direction: column;
+
+        .smallTitle {
+          font-weight: 600;
+          padding: 15px 0 0 15px;
+        }
+
+        .searchPart {
+          padding: 15px 0 0 15px;
+          color: grey;
+          font-weight: 400;
+          font-size: 14px;
+
+          i {
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 5px;
+          }
+        }
+
+        .namingSec {
+          padding: 10px 8px 10px 10px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: center;
+          cursor: pointer;
+
+          .openDown {
+            display: flex;
+            flex-direction: row;
+
+            .downArrow {
+              width: 10;
+              height: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-top: 5px solid $BG_BLACK;
+              margin-top: 10px;
+            }
+
+            .homePart {
+              display: flex;
+              margin-left: 5px;
+
+              i {
+                height: 22px;
+                width: 22px;
+                background: $BG_HOMEICON;
+                font-size: $fontSize14;
+                color: $BG_WHITE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 7px;
+                margin-right: 5px;
+              }
+            }
+          }
+
+          i {
+            font-size: 18px;
+            color: $BG_BLUE;
+          }
+        }
+
+        .bluetxt {
+          background: $BG_LIGHTBLUE;
+          color: $BLUE_TXT;
+          width: 80%;
+          margin: 0px 0px 0px 15px;
+          padding: 4px 0px 4px 10px;
+          font-size: 14px;
+          border-radius: 6px;
+        }
+
+        .blacktxt {
+          margin: 0px 0px 0px 15px;
+          padding: 4px 0px 4px 10px;
+          font-size: 14px;
+          border-radius: 6px;
+        }
+      }
+
+      .bottomSec {
+        display: flex;
+        flex-direction: column;
+
+        .dashboardTitle {
+          border-top: 1px solid $BG_GREY;
+          border-bottom: 1px solid $BG_GREY;
+          padding: 10px 0 10px 12px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .lastBtn {
+          border: 1px solid #c4c4c4;
+          border-radius: 5px;
+          padding: 5px 0px 6px 5px;
+          font-size: 12px;
+          font-weight: 600;
+          display: flex;
+          cursor: pointer;
+
+          i {
+            font-size: 16px;
+            padding: 0 4px;
+          }
+
+          .black {
+            color: $BLACK_TXT;
+          }
+
+          .blue {
+            color: $BG_BLUE;
+          }
+        }
+
+        span {
+          padding: 15px;
+        }
+      }
+    }
+
+    .mainTableSection {
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+
+      .headerDeatail {
+              }
+
+      .tableSec{
+        .ag-theme-balham{
+          position: absolute;
+          padding: 0 20px 0 20px;
+          .ag-root-wrapper{
+            border: none;
+            .ag-root-wrapper-body{
+              .ag-root{
+                .ag-header{
+                  background-color: $BG_WHITE;
+                  border: none;
+                  height: 24%;
+                  .ag-header-viewport{
+                    background: $BG_WHITE;
+                    .ag-header-container{
+                      .ag-header-row-column{
+                        width: 100%;
+                        .ag-header-cell:nth-child(1)
+                        {
+                          // &::before{
+                          //   content: "\e905";
+                          //   font-size: 22px;
+                          //   font-family: 'dashboard';
+                          //   color: $BG_GREY;
+                          //   display: block;
+                          //   float: right;
+                          //   position: relative
+                          // }
+                          .ag-header-cell-label{
+                            .ag-header-cell-text{
+                              font-size: $fontSize18;
+                              font-weight: 400;
+                              color: $BLUE_TXT;
+                            }
+                          }
+                        }
+                        .ag-header-cell:nth-child(2)
+                        {
+                          .ag-header-cell-label{
+                            justify-content: center;
+                            .ag-header-cell-text{
+                              font-size: $fontSize14;
+                              font-weight: 400;
+                            }
+                          }
+                        }
+                        .ag-header-cell:nth-child(3)
+                        {
+                          background: $BG_LIGHTGREY;
+                          border-top-left-radius: 5px;
+                          .ag-header-cell-label{
+                            justify-content: center;
+                            .ag-header-cell-text{
+                              font-size: $fontSize14;
+                              font-weight: 400;
+                            }
+                          }
+                        }
+                        .ag-header-cell:nth-child(4)
+                        {
+                          background: $BG_LIGHTGREY;
+                          border-top-right-radius: 5px;
+                          .ag-header-cell-label{
+                            justify-content: center;
+                            .ag-header-cell-text{
+                              font-size: $fontSize14;
+                              font-weight: 400;
+                            }
+                          }
+                        }
+                        .ag-header-cell:nth-child(5)
+                        {
+                          .ag-header-cell-label{
+                            justify-content: center;
+                            .ag-header-cell-text{
+                              font-size: $fontSize14;
+                              font-weight: 400;
+                            }
+                          }
+                        }
+                        .ag-header-cell{
+                          &::after{
+                            width: 0;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .ag-body-viewport{
+                  .ag-center-cols-clipper 
+                  {
+                    .ag-center-cols-viewport{
+                      .ag-center-cols-container{
+                        .ag-row{
+                          background: $BG_LIGHTGREY;
+                          .ag-cell{
+                            
+                          }
+                          &:before{
+                            content: '';
+                            height: 28px;
+                            width: 6px;
+                            background: $BG_BLUE;
+                            display: block;
+                            position: absolute;
+                          }
+                        }
+                        .ag-cell:nth-child(1)
+                        {
+                          &:before{
+                            content: "\e905";
+                            font-size: 22px;
+                            font-family: 'dashboard';
+                            color: $BG_GREY;
+                            display: block;
+                            float: right;
+                            position: relative;
+                          }
+                        }
+                        .ag-cell:nth-child(2)
+                        {
+                          justify-content: center;
+                          display: flex
+                        }
+                        .ag-cell:nth-child(3)
+                        {
+                          justify-content: center;
+                          display: flex;
+
+                        }
+                        .ag-cell:nth-child(4)
+                        {
+                          justify-content: center;
+                          display: flex
+                        }
+                        .ag-cell:nth-child(5)
+                        {
+                          justify-content: center;
+                          display: flex
+                        }
+                      }
+                    }
+                  }
+                  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

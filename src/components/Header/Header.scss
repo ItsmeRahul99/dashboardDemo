@@ -1,0 +1,271 @@
+@import "../../assets/scss/variables.scss";
+
+.headerMain {
+	background: #ffffff;
+	height: 160px;
+	border-bottom: 1px solid $BG_GREY;
+	margin-bottom: 50px;
+	padding: 30px 15px 15px 30px;
+
+	.upperSection {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.mainHeading {
+		display: flex;
+    flex-direction: column;
+
+		.mainTitle {
+			display: table;
+			font-weight: 600;
+			font-size: $fontSize24;
+			margin-bottom: 0;
+
+			.icon-star {
+				font-size: $fontSize18;
+				color: $BG_GREY;
+				padding-left: 15px;
+			}
+			
+		}
+
+		.subTitle {
+			margin: 0;
+			font-weight: 400;
+			color: $GREY_TXT;
+			font-size: $fontSize14;
+		}
+	}
+
+	.lowerSection {
+		display: flex;
+		flex-direction: row;
+
+		.iconUl {
+			.iconLi {
+				display: table;
+				float: left;
+				margin-right: 15px;
+				position: relative;
+
+				&.borderOutline {
+					border: 1px solid $BG_GREY;
+					// padding: 7px 15px 2px 15px;
+					border-radius: 20px;
+					padding: 6px 15px;
+
+					&.borderLess {
+						border-radius: 5px;
+					}
+
+					&.border0 {
+						border-radius: 0;
+						display: inline-block;
+						position: relative;
+						width: 75px;
+						height: 40px; /* width * 0.866 */
+						background: #f1f1f1;
+						box-sizing: border-box;
+						-webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+						-moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+					}
+					.icon-multimedia{
+						color: $BG_BLUE;
+						font-size: $fontSize20;
+						margin-top: 5px;
+						display: flex;
+						align-items: center;
+					}
+				}
+
+				.iconCss {
+					font-size: $fontSize28;
+
+					&.iconCssSmall {
+						font-size: $fontSize14;
+						position: relative;
+					}
+				}
+
+				.borderOuter {
+					color:  $BG_BLUE;
+					height: 28px;
+					width: 28px;
+					border-radius: 50%;
+					position: absolute;
+					left: 19px;
+				}
+
+				.paddR {
+					padding-left: 8px;
+					font-family: sans-serif;
+					font-size: $fontSize14;
+					color: $BLACK_TXT;
+				}
+
+				.fontS {
+					font-size: $fontSize14;
+					margin-left: 5px;
+				}
+
+				.fontB {
+					font-size: $fontSize16;
+				}
+
+				.iconText {
+					.fontB {
+						&:before {
+							content: '';
+							width: 1px;
+							height: 25px;
+							background: $BG_GREY;
+							position: absolute;
+							top: -5px;
+							right: 2px;
+						}
+					}
+				}
+
+				&.marginR {
+					margin-right: 40px;
+				}
+			}
+		}
+	}
+
+	.secondRow {
+		justify-content: space-between;
+    display: flex;
+		.tableSection {
+			display: flex;
+			align-items: center;
+
+			.paddT {
+				padding-right: 8px;
+
+				&:last-child {
+					padding-left: 15px;
+				}
+			}
+
+			.icon-left {
+				transform: rotate(180deg);
+				font-size: $fontSize10;
+			}
+
+			p {
+				font-size: $fontSize14;
+				font-weight: 400;
+				margin: 0;
+				cursor: pointer;
+			}
+			.mainTitle{
+				i{
+					&:before{
+						content: "\e916";
+						font-size: $fontSize10;
+						margin-left: 5px;
+
+					}
+				}
+			}
+		}
+
+		.rightSection {
+			display: flex;
+			flex-direction: row;
+
+			ul {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				margin-right: 15px;
+
+				li {
+					list-style-type: none;
+					display: table;
+					float: left;
+					cursor: pointer;
+					margin-right: 20px;
+
+					&.borderOutline {
+						border: 1px solid $BG_GREY;
+						border-radius: 20px;
+						line-height: 30px;
+						padding: 0px 15px;
+
+						span {
+							font-size: $fontSize14;
+							color: $GREY_TXT;
+						}
+					}
+
+					&.borderR {
+						border: 2px solid $BG_GREY;
+						border-top-left-radius: 20px;
+						border-bottom-left-radius: 20px;
+						line-height: 28px;
+						padding: 0 10px;
+						-moz-box-shadow: 6px 0 5px -2px $BG_GREY;
+						-webkit-box-shadow: 6px 0 5px -2px $BG_GREY;
+						box-shadow: 6px 0 5px -2px $BG_GREY;
+						cursor: pointer;
+					}
+
+					&.borderL {
+						border: 1px solid $BG_GREY;
+						border-top-right-radius: 20px;
+						border-bottom-right-radius: 20px;
+						line-height: 31px;
+						padding: 0px;
+						cursor: pointer;
+					}
+
+					&.padd0 {
+						margin: 0 !important;
+					}
+
+					.paddR {
+						padding-left: 8px;
+						font-family: sans-serif;
+						font-size: $fontSize14;
+						color: $WHITE_TXT;
+					}
+
+					.icon-left {
+							
+						&:before{
+							padding: 0 10px 0px 5px;
+							color: $WHITE_TXT;
+							font-size: $fontSize10;
+							content: "\e916";
+							
+								}
+
+
+					}
+
+					&.bgColor {
+						background: $BG_BLUE;
+						border-color: $BG_BLUE;
+						border-right: 1px solid $GREY_TXT;
+					}
+
+					&.iconCss {
+						font-size: $fontSize18;
+						padding-right: 2px;
+
+						&:last-child {
+							padding-right: 0;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

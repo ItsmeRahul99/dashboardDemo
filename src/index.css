@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'dashboard';
+  src:  url('./assets/fonts/dashboard.eot?hyeoz1');
+  src:  url('./assets/fonts/dashboard.eot?hyeoz1#iefix') format('embedded-opentype'),
+    url('./assets/fonts/dashboard.ttf?hyeoz1') format('truetype'),
+    url('./assets/fonts//dashboard.woff?hyeoz1') format('woff'),
+    url('./assets/fonts//dashboard.svg?hyeoz1#dashboard') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dashboard' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-addUser:before {
+  content: "\e900";
+}
+.icon-alignment:before {
+  content: "\e901";
+}
+.icon-apple:before {
+  content: "\e902";
+}
+.icon-calendar:before {
+  content: "\e903";
+}
+.icon-closeEye:before {
+  content: "\e904";
+}
+.icon-comment:before {
+  content: "\e905";
+}
+.icon-home:before {
+  content: "\e906";
+}
+.icon-inbox:before {
+  content: "\e907";
+}
+.icon-left:before {
+  content: "\e908";
+}
+.icon-multimedia:before {
+  content: "\e909";
+}
+.icon-multipleUser:before {
+  content: "\e90a";
+}
+.icon-notification:before {
+  content: "\e90b";
+}
+.icon-pencil:before {
+  content: "\e90c";
+}
+.icon-playstore:before {
+  content: "\e90d";
+}
+.icon-plug:before {
+  content: "\e90e";
+}
+.icon-plus:before {
+  content: "\e90f";
+}
+.icon-question:before {
+  content: "\e910";
+}
+.icon-robot:before {
+  content: "\e911";
+}
+.icon-search:before {
+  content: "\e912";
+}
+.icon-star:before {
+  content: "\e913";
+}
+.icon-table:before {
+  content: "\e914";
+}
+.icon-user:before {
+  content: "\e915";
+}
